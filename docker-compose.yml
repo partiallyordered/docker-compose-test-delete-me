@@ -1,0 +1,9 @@
+version: '2.1'
+
+services:
+  alpine:
+    image: alpine:latest
+    entrypoint: ["env"]
+    env_file:
+    - 1.env
+    - 2.env
